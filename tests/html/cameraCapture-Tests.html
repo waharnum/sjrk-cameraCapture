@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script src="../../node_modules/infusion/dist/infusion-all.js"></script>
+
+        <link rel="stylesheet" media="screen" href="../../node_modules/infusion/tests/lib/qunit/css/qunit.css" />
+
+        <script src="../../node_modules/infusion/tests/lib/qunit/js/qunit.js"></script>
+
+        <script src="../../node_modules/infusion/tests/test-core/jqUnit/js/jqUnit.js"></script>
+
+        <script src="../../node_modules/infusion/tests/test-core/jqUnit/js/jqUnit-browser.js"></script>
+        <script src="../../node_modules/infusion/tests/test-core/utils/js/IoCTestUtils.js"></script>
+
+        <script src="../../src/js/cameraCapture.js"></script>
+
+        <script src="../js/cameraCaptureTests.js"></script>
+
+        <title>sjrk.cameraCapture - Tests</title>
+
+        <style>
+            .sjrkc-cameraCapture-video {
+                width: 480;
+                height: 360;
+                background-color: #CCC;
+            }
+            .sjrkc-cameraCapture-canvas {
+                width: 480;
+                height: 360;
+                background-color: #00C;
+            }
+            .sjrkc-cameraCapture-savedImages {
+                width: 100%;
+            }
+
+            .sjrkc-cameraCapture-savedImages img {
+                height: 180;
+                width: 240;
+                border: 2px solid #CC0;
+            }
+
+        </style>
+
+    </head>
+    <body id="body">
+        <h1 id="qunit-header">sjrk.cameraCapture - Tests</h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+        <div class="sjrkc-cameraCapture">
+            <video class="sjrkc-cameraCapture-video" autoplay></video>
+            <canvas class="sjrkc-cameraCapture-canvas"></canvas>
+            <br/>
+            <button class="sjrkc-cameraCapture-captureControl">Waiting for Camera...</button>
+            <button class="sjrkc-cameraCapture-saveControl">Waiting for Image...</button>
+            <div class="sjrkc-cameraCapture-savedImages">
+
+            </div>
+        </div>
+    </body>
+</html>
